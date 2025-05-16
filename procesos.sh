@@ -23,3 +23,17 @@ case $opcion in
 	fi
 	read -p "presione enter para continuar"
 	;;
+	3) read -p "ingrese el PID del proceso a terminar: " pid
+	if ps -p $pid>/dev/null; then
+		read -p "¿estás seguro de que deseas enviar SIGTERM al proceso $pid (s/n)?" confirm
+
+		if [[ "$confirm" == "s" ]]; then
+			kill -15 $pid && echo "proceso $pid terminado" || echo "Error al intenatr terminar el proceso"
+		else
+			echo "operacion cancelada"
+		fi
+	else
+		echo "PID no válido"
+	fi
+	read -p "presione enter para continuar..."
+	;;
