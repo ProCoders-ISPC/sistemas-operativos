@@ -2,7 +2,7 @@
 
 while true; do
 	clear
-	echo "=====TOOLKIT====="
+	echo "=====MonitoraSys====="
 	echo "1. Gestion de procesos"
 	echo "0. salir"
 	echo "================="
