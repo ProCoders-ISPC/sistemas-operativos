@@ -15,3 +15,11 @@ case $opcion in
 	ps -eo pid,ppid,cmd,%mem,%cpu -sort=%cpu | head -15
 	read -p "presione Enter para continuar"
 	;;
+    2) read -p "ingrese el PID del proceso: " pid
+	if ps -p $pid>/dev/null; then
+		ps -p $pid -o pid,ppid,cmd,%mem,%cpu
+	else
+		echo "PID no válido"
+	fi
+	read -p "presione enter para continuar"
+	;;
