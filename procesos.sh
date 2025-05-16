@@ -9,3 +9,9 @@ while true; do
 	echo "0. Volver al menù principal"
 	echo "============================="
 	read -p "seleccione una opción..." opcion
+
+case $opcion in
+	1) echo "Procesos en ejecución -simplificado-"
+	ps -eo pid,ppid,cmd,%mem,%cpu -sort=%cpu | head -15
+	read -p "presione Enter para continuar"
+	;;
