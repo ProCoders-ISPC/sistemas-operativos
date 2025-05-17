@@ -2,11 +2,18 @@
 <ol>
 <li>Iniciá la máquina virtual Ubuntu desde VirtualBox.</li>
 <li>Abrir la terminal con la combinación de teclas: Ctrl + Alt + T.</li>
-<li>Verificá si tenés GIT: git --version <br>
+<li>Verificá si tenés GIT: 
+<code>git --version</code> <br>
 Si no lo tenés: <br> 
-sudo apt update <br>
-sudo apt install git -y </li>
-<li> Crear una carpeta en el explorarador de archivos y clonar el repositorio: </li>
+<code>sudo apt update</code><br>
+<code>sudo apt install git -y</code></li>
+<li> Crear una carpeta en el explorarador de archivos y clonar el repositorio: <br>
+<code>git clone https://github.com/KaryQuinteros/sistemas-operativos.git</code> <br>
+</li>
+<li>se debe posicionar en la carpeta sistemas operativos con el comando: <br> 
+<code>cd sistemas-operativos</code>
+</li>
+
 </ol>
 
 
