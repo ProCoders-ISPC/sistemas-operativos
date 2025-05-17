@@ -1,21 +1,75 @@
+<div align="center">
+<h1>Guía para Ejecutar MonitoraSys en Ubuntu (VirtualBox)</h1>
+</div>
 
-<h1>Guía para Ejecutar el Proyecto main.sh en Ubuntu (VirtualBox)</h1>
 <ol>
 <li>Iniciá la máquina virtual Ubuntu desde VirtualBox.</li>
 <li>Abrir la terminal con la combinación de teclas: Ctrl + Alt + T.</li>
 <li>Verificá si tenés GIT: 
+<div align="center">
 <code>git --version</code> <br>
-Si no lo tenés: <br> 
-<code>sudo apt update</code><br>
-<code>sudo apt install git -y</code></li>
-<li> Crear una carpeta en el explorarador de archivos y clonar el repositorio: <br>
-<code>git clone https://github.com/KaryQuinteros/sistemas-operativos.git</code> <br>
-</li>
-<li>Se debe posicionar en la carpeta sistemas operativos con el comando: <br> 
-<code>cd sistemas-operativos</code>
-</li>
-<li>Dar permisos de ejecucion de los scripts con el comando: <br>
-<code>chmod +x main.sh procesos.sh</code></li>
+</div>
 
+Si no lo tenés: <br> 
+
+<div align="center">
+<code>sudo apt update</code><br>
+<code>sudo apt install git -y</code>
+</div>
+<br>
+</li>
+<li> Crear una carpeta en el explorador de archivos y clonar el repositorio: <br>
+
+<div align="center">
+<code>git clone https://github.com/ProCoders-ISPC/sistemas-operativos.git</code> <br>
+</div>
+ <br>
+
+</li>
+<li>Posicionarse en la carpeta sistemas-operativos con el comando: <br> 
+<div align="center">
+<code>cd sistemas-operativos</code> <br>
+</div>
+ <br>
+</li>
+
+<li>Dar permisos de ejecución a los scripts con el comando: <br>
+<div align="center">
+<code>chmod +x main_toolkit.sh procesos.sh</code>
+</div>
+ <br>
+</li>
+<li>Ejecutar el toolkit principal con el comando: <br>
+<div align="center">
+<code>./main_toolkit.sh</code>
+</div>
+ <br>
+</li>
 </ol>
+
+<div align="center">
+<h2>Funcionalidad de Gestión de Procesos</h2>
+</div>
+
+<p>El menú principal del toolkit incluye una opción para gestionar procesos.
+
+<div align="center">
+  <img height="150" src="img/captura1.png" />
+</div>
+
+ Al seleccionar esta opción, se ejecutará el script <code>procesos.sh</code>, que permite:</p>
+<ul>
+<li>Listar los procesos en ejecución.</li>
+<li>Buscar un proceso específico por su nombre.</li>
+<li>Finalizar un proceso ingresando su PID.</li>
+</ul>
+
+###
+
+<div align="center">
+  <img height="300" src="img/captura2.png" />
+</div>
+
+###
+<p>Esta funcionalidad está diseñada para facilitar la administración de procesos en el sistema operativo.</p>
 
