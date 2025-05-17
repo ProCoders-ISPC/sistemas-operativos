@@ -10,9 +10,11 @@ Si no lo tenés: <br>
 <li> Crear una carpeta en el explorarador de archivos y clonar el repositorio: <br>
 <code>git clone https://github.com/KaryQuinteros/sistemas-operativos.git</code> <br>
 </li>
-<li>se debe posicionar en la carpeta sistemas operativos con el comando: <br> 
+<li>Se debe posicionar en la carpeta sistemas operativos con el comando: <br> 
 <code>cd sistemas-operativos</code>
 </li>
+<li>Dar permisos de ejecucion de los scripts con el comando: <br>
+<code>chmod +x main.sh procesos.sh</code></li>
 
 </ol>
 
