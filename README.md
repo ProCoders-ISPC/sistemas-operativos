@@ -54,7 +54,7 @@ Si no lo tenés: <br>
 <p>El menú principal del toolkit incluye una opción para gestionar procesos.
 
 <div align="center">
-  <img height="150" src="https://i.ibb.co/SwWPWnGR/Captura-de-pantalla-2025-05-17-123317.png"  />
+  <img height="150" src="img/captura1.png" />
 </div>
 
  Al seleccionar esta opción, se ejecutará el script <code>procesos.sh</code>, que permite:</p>
@@ -67,7 +67,7 @@ Si no lo tenés: <br>
 ###
 
 <div align="center">
-  <img height="300" src="https://i.ibb.co/ynnqH46N/Captura-de-pantalla-2025-05-17-123554.png"  />
+  <img height="300" src="img/captura2.png" />
 </div>
 
 ###
