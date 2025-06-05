@@ -3,15 +3,16 @@
 while true; do
     clear
     echo "===== MONITOREO DE DISCO ====="
-    echo "1. Ver espacio libre y utilizado (df -h)"
-    echo "2. Ver tamaño de un directorio o archivo (du -sh <ruta>)"
+    echo "1. Ver espacio libre y utilizado"
+    echo "2. Ver tamaño de un directorio o archivo"
+    echo "3. Listar archivos de un directorio con permisos (ls -l)"
     echo "0. Volver al menú principal"
     echo "==============================="
     read -p "Seleccione una opción: " opcion
 
     case $opcion in
         1)
-            echo "\n=== ESPACIO EN DISCO (df -h) ==="
+            echo "\n=== ESPACIO EN DISCO ==="
             df -h
             echo ""
             read -p "Presione Enter para continuar..."
@@ -22,6 +23,16 @@ while true; do
                 du -sh "$ruta"
             else
                 echo "La ruta ingresada no existe."
+            fi
+            read -p "Presione Enter para continuar..."
+            ;;
+        3)
+            read -p "Ingrese la ruta del directorio: " dir
+            if [ -d "$dir" ]; then
+                echo "\n=== LISTADO DE ARCHIVOS EN $dir ==="
+                ls -l "$dir"
+            else
+                echo "La ruta ingresada no es un directorio válido."
             fi
             read -p "Presione Enter para continuar..."
             ;;
