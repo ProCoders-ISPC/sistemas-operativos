@@ -5,10 +5,10 @@ while true; do
 	echo "=====MONITORIEO DE MEMORIA====="
 	echo "1. Ver uso de memoria RAM y SWAP"
 	echo "2. Mostrar detalles de memeoria"
-	echo "3. Ver estadisticas de memoria virtual"
-	echo "0. Volver al menù principal"
+	echo "3. Ver estadísticas de memoria virtual"
+	echo "0. Volver al menú principal"
 	echo "=============================="
-	read -p "Seleccione una opciòn" opcion
+	read -p "Seleccione una opción" opción
 
 	case $opcion in
 		1)
@@ -20,17 +20,33 @@ while true; do
 		;;
 		2)
 		  echo ""
-		  echo "===INFORMACIÒN DETALLADA DE MEMORIA==="
-		  echo "---Informacion desde /proc/meminfo---"
+		  echo "===INFORMACIÓN DETALLADA DE MEMORIA==="
+		  echo "---Información desde /proc/meminfo---"
 		  echo ""
-
-
-
-
-
-
+		  echo " Memoria total:"
+		  grep "MemTotal\|MemFree\|MemAvailable"/proc/meminfo
+		  echo ""
+		  echo "Buffers y Cache: "
+		  grep "Buffers\|cached\|SReclaimable\|SUnreclaim" /proc/meminfo
+		  echo "Memoria de kernel:"
+		  grep "Slab\|KernelStack\|PageTables" /proc/meminfo
+		  echo ""
+		  read -p "presione Enter para continuar..."
+		;;
+		3)
+		  echo ""
+		  echo "===ESTADISTICAS DE MEMORIA VIRTUAL==="
+		  echo "---Estadísticas de memoria---"
+		  vmstat -s | head -10
+		  echo ""
+		  read -p "presiona Enter para continuar..."
+		;;
+		0)
+		  break
+		;;
+		
 		*)
-		  echo "Opciòn no valida. Presione enter para continuar..."·
+		  echo "Opción no valida. Presione enter para continuar..."·
 		  read -p "presione enter para continuar..."
 		;;
 	esac
