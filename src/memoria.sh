@@ -19,18 +19,19 @@ while true; do
 		  read -p "presione Enter para continuar...";;
 		
 		2)echo ""
-		  echo "===INFORMACIÓN DETALLADA DE MEMORIA==="
-		  echo "---Información desde /proc/meminfo---"
-		  echo ""
-		  echo " Memoria total:"
-		  grep "MemTotal\|MemFree\|MemAvailable"/proc/meminfo
-		  echo ""
-		  echo "Buffers y Cache: "
-		  grep "Buffers\|cached\|SReclaimable\|SUnreclaim" /proc/meminfo
-		  echo "Memoria de kernel:"
-		  grep "Slab\|KernelStack\|PageTables" /proc/meminfo
-		  echo ""
-		  read -p "presione Enter para continuar...";;
+          echo "===INFORMACIÓN DETALLADA DE MEMORIA==="
+          echo "---Información desde /proc/meminfo---"
+          echo ""
+          echo "Memoria total:"
+          grep "MemTotal\|MemFree\|MemAvailable" /proc/meminfo
+          echo ""
+          echo "Buffers y Cache: "
+          grep "Buffers\|[Cc]ached\|SReclaimable\|SUnreclaim" /proc/meminfo
+          echo ""
+          echo "Memoria de kernel:"
+          grep "Slab\|KernelStack\|PageTables" /proc/meminfo
+          echo ""
+          read -p "presione Enter para continuar...";;
 
 		3)echo ""
 		  echo "===ESTADISTICAS DE MEMORIA VIRTUAL==="

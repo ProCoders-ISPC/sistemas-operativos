@@ -10,7 +10,7 @@
 <code>git --version</code> <br>
 </div>
 
-Si no lo tenés: <br> 
+Si no lo tenés: <br>
 
 <div align="center">
 <code>sudo apt update</code><br>
@@ -57,7 +57,8 @@ Si no lo tenés: <br>
   <img height="150" src="img/captura1.png" />
 </div>
 
- Al seleccionar esta opción, se ejecutará el script <code>procesos.sh</code>, que permite:</p>
+Al seleccionar esta opción, se ejecutará el script <code>procesos.sh</code>, que permite:</p>
+
 <ul>
 <li>Listar los procesos en ejecución.</li>
 <li>Buscar un proceso específico por su nombre.</li>
@@ -71,5 +72,5 @@ Si no lo tenés: <br>
 </div>
 
 ###
-<p>Esta funcionalidad está diseñada para facilitar la administración de procesos en el sistema operativo.</p>
 
+<p>Esta funcionalidad está diseñada para facilitar la administración de procesos en el sistema operativo.</p>
