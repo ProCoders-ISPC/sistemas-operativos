@@ -37,6 +37,10 @@ while true; do
             read -p "Presione Enter para continuar..."
             ;;
         0)
+            echo "Volviendo al menú principal..."
+            sleep 1
+            clear
+            exit 0
             break
             ;;
         *)

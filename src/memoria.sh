@@ -44,6 +44,7 @@ while true; do
 		  sleep 1
 		  clear
 		  exit 0
+		  break
 		;;
 		
 		*)
