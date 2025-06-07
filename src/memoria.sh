@@ -8,18 +8,17 @@ while true; do
 	echo "3. Ver estadísticas de memoria virtual"
 	echo "0. Volver al menú principal"
 	echo "=============================="
-	read -p "Seleccione una opción" opción
+	read -p "Seleccione una opción: " opcion
 
 	case $opcion in
-		1)
-		  echo ""
+		
+		1)echo ""
 		  echo "===USO DE MEMORIA RAM Y SWAP==="
 		  free -h
 		  echo ""
-		  read -p "presione Enter para continuar..."
-		;;
-		2)
-		  echo ""
+		  read -p "presione Enter para continuar...";;
+		
+		2)echo ""
 		  echo "===INFORMACIÓN DETALLADA DE MEMORIA==="
 		  echo "---Información desde /proc/meminfo---"
 		  echo ""
@@ -31,18 +30,20 @@ while true; do
 		  echo "Memoria de kernel:"
 		  grep "Slab\|KernelStack\|PageTables" /proc/meminfo
 		  echo ""
-		  read -p "presione Enter para continuar..."
-		;;
-		3)
-		  echo ""
+		  read -p "presione Enter para continuar...";;
+
+		3)echo ""
 		  echo "===ESTADISTICAS DE MEMORIA VIRTUAL==="
 		  echo "---Estadísticas de memoria---"
 		  vmstat -s | head -10
 		  echo ""
-		  read -p "presiona Enter para continuar..."
-		;;
+		  read -p "presiona Enter para continuar...";;
+
 		0)
-		  break
+		  echo "Volviendo al menú principal..."
+		  sleep 1
+		  clear
+		  exit 0
 		;;
 		
 		*)

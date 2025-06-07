@@ -12,7 +12,7 @@ while true; do
 
 	case $opcion in
 		1) src/./procesos.sh;;
-		2) src/.memoria.sh;;
+		2) ./src/memoria.sh;;
 		3) src/.disco.sh;;
 		0) echo "saliendo del toolkit..."; exit 0;;
 		*) echo "Opciòn inválida. Presione Enter para continuar..."; read;;
