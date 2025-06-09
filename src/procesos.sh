@@ -53,7 +53,11 @@ while true; do
             read -p "Presione Enter para continuar..."
             clear
             ;;
-        0)  break
+        0)  echo "Volviendo al menú principal..."
+            sleep 1
+            clear
+            exit 0
+            break
             ;;
         *)  echo "Opción no válida."
             read -p "Presione Enter para continuar..."

@@ -35,41 +35,78 @@ sudo apt install git -y</code></pre>
     <pre><code>cd sistemas-operativos</code></pre>
   </li>
   <li><strong>Dar permisos de ejecución:</strong>
-    <pre><code>chmod +x main_toolkit.sh procesos.sh</code></pre>
+    <pre><code>chmod +x main.sh src/disco.sh src/memoria.sh src/procesos.sh</code></pre>
   </li>
   <li><strong>Ejecutar la herramienta:</strong>
-    <pre><code>./main_toolkit.sh</code></pre>
+    <pre><code>./main.sh</code></pre>
   </li>
 </ol>
 
 <hr>
 
-<h2>⚙️ Funcionalidad: Gestión de Procesos</h2>
-<p>Desde el menú principal podés acceder a la gestión de procesos:</p>
+<h2>⚙️ Funcionalidades: </h2>
+<p>Desde el menú principal (main.sh) podés acceder a 3 opciones, Gestión de Memoria, Gestión de Disco y Gestión de Procesos:</p>
 <div align="center">
- <img src="img/captura1.png" alt="Menú Principal" height="150">
+ <img src="./img/captura_main.PNG" alt="Menú Principal" height="250">
 </div>
 
-<p>La opción ejecutará el script <code>procesos.sh</code>, el cual permite:</p>
+<p>La <strong>opción 1</strong> ejecutará el script <code>procesos.sh</code>, el cual permite:</p>
 <ul>
   <li>📄 Listar los procesos en ejecución</li>
   <li>🔍 Buscar un proceso por su nombre</li>
   <li>❌ Finalizar un proceso mediante su PID</li>
 </ul>
 
+<hr>
+
+<h2>⚙️ Funcionalidad: Gestión de Procesos</h2>
+<p>Desde el menú principal podés acceder a la gestión de procesos:</p>
 <div align="center">
- <img src="img/captura2.png" alt="Gestión de Procesos" height="300">
+ <img src="./img/captura_procesos.PNG" alt="Gestión de Procesos" height="300">
 </div>
 
-<p>Esta funcionalidad está diseñada para facilitar la administración del sistema sin necesidad de comandos complejos.</p>
+<p>Esta funcionalidad está diseñada para simplificar la administración del sistema sin necesidad de comandos complejos.</p>
+
+
+<p>La <strong>opción 2</strong> ejecutará el script <code>memoria.sh</code>, el cual permite:</p>
+<ul>
+  <li>🧩 Visualizar el uso de memoria RAM y SWAP</li>
+  <li>🔍 Mostrar detalles de memoria</li>
+  <li>📊 Ver estadísticas de memoria virtual</li>
+</ul>
+
+<div align="center">
+ <img src="./img/captura_memoria.PNG" alt="Gestión de Memoria" height="300">
+</div>
+
+<p>Esta funcionalidad está diseñada para facilitar la visualización del uso de las memorias del sistema.</p>
+
+
+<p>La <strong>opción 3</strong> ejecutará el script <code>disco.sh</code>, el cual permite:</p>
+<ul>
+  <li>💾 Visualizar el espacio libre y utilizado del disco.</li>
+  <li>📂 Ver tamaño de un directorio o archivo.</li>
+  <li>🗃️ Listar archivos de un directorio con permisos.</li>
+</ul>
+
+<div align="center">
+ <img src="./img/captura_disco.PNG" alt="Gestión de Disco" height="300">
+</div>
+
+<p>Esta funcionalidad está diseñada para monitorear el espacio del disco y el tamaño de los archivos.</p>
+
+
 
 <hr>
 
 <h2>📁 Estructura del Proyecto</h2>
 <pre><code>sistemas-operativos/
-├── main_toolkit.sh
-├── procesos.sh
-├── img/
+├── 📁img/
+├── 📁src/
+│   ├── disco.sh
+│   ├── memoria.sh
+│   └── procesos.sh
+├── main.sh
 └── README.md
 </code></pre>
 
