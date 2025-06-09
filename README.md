@@ -76,6 +76,38 @@ sudo apt install git -y</code></pre>
 </ul>
 
 <div align="center">
+<<<<<<< HEAD
+ <img src="./img/captura_memoria.PNG" alt="Gestión de Memoria" height="300">
+=======
+ <img src="img/captura2.png" alt="Gestión de Procesos" height="300">
+>>>>>>> 2f7ba27e55f5ecb33e0cdaaa8d433ecd744647c0
+</div>
+
+<p>Esta funcionalidad está diseñada para facilitar la visualización del uso de las memorias del sistema.</p>
+
+
+<p>La <strong>opción 3</strong> ejecutará el script <code>disco.sh</code>, el cual permite:</p>
+<ul>
+  <li>💾 Visualizar el espacio libre y utilizado del disco.</li>
+  <li>📂 Ver tamaño de un directorio o archivo.</li>
+  <li>🗃️ Listar archivos de un directorio con permisos.</li>
+</ul>
+
+<div align="center">
+ <img src="./img/captura_procesos.PNG" alt="Gestión de Procesos" height="300">
+</div>
+
+<p>Esta funcionalidad está diseñada para simplificar la administración del sistema sin necesidad de comandos complejos.</p>
+
+
+<p>La <strong>opción 2</strong> ejecutará el script <code>memoria.sh</code>, el cual permite:</p>
+<ul>
+  <li>🧩 Visualizar el uso de memoria RAM y SWAP</li>
+  <li>🔍 Mostrar detalles de memoria</li>
+  <li>📊 Ver estadísticas de memoria virtual</li>
+</ul>
+
+<div align="center">
  <img src="./img/captura_memoria.PNG" alt="Gestión de Memoria" height="300">
 </div>
 
